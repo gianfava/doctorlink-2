@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!–---------CSS GLOBAL ------------–>
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <!–---------CSS DO MENU RESPONSIVO ------------–>
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <!–---------JAVASCRIPT ------------–>
+    <script src="js/script.js"></script>
+
+    <!–---------BIBLIOTECA DE ICONES SVG ------------–>
+    <script src="https://kit.fontawesome.com/092ff46a3e.js" crossorigin="anonymous"></script>
+
+    <!–---------Código do FAVICON ------------–>
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>DoctorLink | Conectando Saúde</title>
+    
+  </head>
+
+
+<body>
+
+  <!–---------Logo + Menu de Navegação ------------–>
+
+  <header class="header">
+    <a href="index.html"><img src="img/logo.png" class="logo" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li><a href="index.html"><i class="fa fa-home-alt"></i> Home</a></li>
+      <li><a href="especialidades.html"><i class="fa fa-stethoscope"></i> Especialidades</a></li>
+      <li><a href="planos.html"><i class="fas fa-laptop-medical"></i> Planos</a></li>
+      <li><a href="sobre.html"><i class="fas fa-vector-square"></i> Sobre Nós</a></li>
+      <li><a href="login.html" class="alogin"><i class="fa fa-user"></i> Login</a></li>
+    </ul>
+  </header>
+
+  
+  <br><br>
+
+
+  <!--inicio da página pacientes-->
+  <main>
+    <div class="profile-container">
+      <div class="profile">
+        <img src="img/user.png" alt="Foto de perfil">
+        <h2>Plano: <strong>Individual</strong>
+          <br>
+          <p>vigência até: 29/05/2024 </p>
+        </h2>
+      </div>
+
+      <!--botões-->
+
+      <div class="section">
+        <div class="absolute">
+          <button onclick="toggleInfo()">Informações Pessoais</button>
+          <button onclick="toggleConsultas()">Consultas</button>
+          <button onclick="toggleExames()">Exames</button>
+        </div>
+        <div id="Info">
+
+          <br>
+          <!--conteúdo do paciente - botão informacoes pessoais -->
+          <p> <span class="titulo">Nome: </span> <br> <span class="conteudo">João da Silva Batista</span></p>
+
+          <p> <br><span class="titulo">Endereço:</span> <br> <span class="conteudo"> Rua Exemplo, 123 </span> </p>
+          <p> <br><span class="titulo"> Telefone:</span> <br> <span class="conteudo"> (99) 9999-9999</span></p>
+          <p><br><span class="titulo">Email: </span> <br> <span class="conteudo">joaobatista@exemplo.com</span></p>
+          <p><br><span class="titulo">Tipo Sanguíneo:</span> <br> <span class="conteudo"> A+</span></p>
+          <p><br><span class="titulo">Plano:</span> <br> <span class="conteudo">Assinatura em
+              29/05/2023</span> </p>
+        </div>
+
+        <!--conteúdo de Consultas-->
+
+        <div id="consultas" class="hidden">
+
+          <!--tabela próximas consultas-->
+
+          <div class="infoconsultas">
+            <h3> Próximas Consultas</h3>
+
+            <li><span class="infomedicas">Clínico Geral</li></span>
+            <p> Data: 27/08/2023<br>
+              Profissional: Dr. Fulano da Silva<br>
+              Status: <span class="Positivo"> Agendada</p></span>
+
+            <li><span class="infomedicas">Dermatologista</li></span>
+            <p> Data: 27/08/2023<br>
+              Profissional: Dr. Carlos da Silva<br>
+              Status: <span class="Positivo"> Agendada</p></span>
+          </div>
+
+          <!--tabela Consultas Anteriores-->
+          <div class="infoconsultas">
+            <h3>Consultas Anteriores</h3>
+            <li><span class="infomedicas">Dermatologista</li></span>
+            <p> Data: 27/08/2023<br>
+              Profissional: Dr. Carlos da Silva<br>
+              Status: <span class="Negativo"> Cancelada</p></span>
+          </div>
+        </div>
+
+        <!--conteudo do botao exames --->
+        <div id="exames" class="hidden">
+
+          <!--tabela próximos exames -->
+
+          <div class="infoconsultas">
+            <h3> Próximos Exames</h3>
+
+            <li><span class="infomedicas">Ultrassonografia Abdominal</li></span>
+            <p> Data: 12/07/2023<br>
+              Laboratório Parceiro: Labteste<br>
+              Status: <span class="Positivo"> Agendada</p></span>
+
+            <li><span class="infomedicas">Exame de Urina (Urinálise)</li></span>
+            <p> Data: 24/07/2023<br>
+              Laboratório Parceiro: Labteste<br>
+              Status: <span class="Positivo"> Agendada</span><br>
+              <span class="observacoes">Obs: jejum de 5 horas <br></span>
+            </p>
+          </div>
+
+          <!--tabela Consultas Anteriores-->
+          <div class="infoconsultas">
+            <h3>Exames Anteriores</h3>
+            <li><span class="infomedicas">Hemograma Laboratorial Completo</li></span>
+            <p> Data: 25/05/2023<br>
+              Laboratório Parceiro: Labteste <br>
+              Status: <span class="Positivo"> Realizado</p></span>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+
+    // função botões - pagina pacientes 
+
+
+    // Exibe as informações pessoais por padrão
+    document.getElementById('Info').classList.remove('hidden');
+
+    // Funções para mostrar/ocultar as seções
+    function toggleInfo() {
+      var Info = document.getElementById('Info');
+      Info.classList.remove('hidden');
+      document.getElementById('consultas').classList.add('hidden');
+      document.getElementById('exames').classList.add('hidden');
+    }
+
+    function toggleConsultas() {
+      var Info = document.getElementById('Info');
+      Info.classList.add('hidden');
+      document.getElementById('consultas').classList.remove('hidden');
+      document.getElementById('exames').classList.add('hidden');
+    }
+
+    function toggleExames() {
+      var Info = document.getElementById('Info');
+      Info.classList.add('hidden');
+      document.getElementById('consultas').classList.add('hidden');
+      document.getElementById('exames').classList.remove('hidden');
+    }
+  </script>
+
+
+
+
+
+<!–---------RODAPE ------------–>
+
+  <div class="footer">
+    <div class="row main">
+      <div class="col site-info">
+        <div class="footer-disclaimer">
+          <div class="logo">
+            <img src="/img/logo.png" alt="" />
+          </div>
+         <p>A DoctorLink é uma plataforma de telemedicina acessível e segura. </p>
+        </div>
+        <div class="footer-links" id="footer">
+          <ul>
+            <li><a href="index.html" alt=""><i class="fa fa-home-alt"></i> Home</a></li>
+            <li><a href="especialidades.html" alt=""><i class="fa fa-stethoscope"></i> Especialidades</a></li>
+            <li><a href="planos.html" alt=""><i class="fas fa-laptop-medical"></i> Planos</a></li>
+            <li><a href="sobre.html" alt=""><i class="fas fa-vector-square"></i> Sobre Nós</a></li>
+            
+          </ul>
+        </div>
+      </div>
+     
+
+      <div class="col">
+        <div class="footer-links">
+          <p><strong>Especialidades</strong></p>
+          <ul style="margin-left: 40px;">
+            <li><a href="especialidades.html"><i class="fa fa-user-doctor"></i> Angiologia</a></li>
+            <li><a href="especialidades.html"><i class="fa-brands fa-mendeley"></i> Assitência Pré Natal</a></li>
+            <li><a href="especialidades.html"><i class="fa fa-heart"></i> Cardiologia</a></li> 
+            <li><a href="especialidades.html"><i class="fa fa-stethoscope"></i> Dermatologia</a></li> 
+            <li><a href="especialidades.html"><i class="fa fa-apple-whole"></i> Nutrição</a></li> 
+            <li><a href="especialidades.html"><i class="fa fa-brain"></i> Neurologia</a></li> 
+            <li><a href="especialidades.html"><i class="fa fa-spa"></i> Psicologia</a></li>
+            <li><a href="especialidades.html"><i class="fa fa-baby"></i> Pediatria</a></li>
+
+          </ul>
+          
+        </div>
+      </div>
+
+      <div class="col maps">
+        <div class="place">
+          <div class="map-container">
+            <div class="map"></div>
+          </div>
+          <div class="address">
+            <p><strong>Fale Conosco</strong></p>
+            <p>+55 016 3234-5678</p>
+            <p>email@doctorlink.com.br</p>
+          </div>
+        </div>
+        <a href="fale-conosco.html"><img src="./img/vector-01.jpg" alt="Fale Conosco"></a>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="social-icons">
+        <ul >
+          <li><a href="#" target="_blank" alt=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank" alt=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank" alt=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank" alt=""><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ending-note">
+      <p>Copyright © 2023 DoctorLink. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  <!–-------FIM RODAPE ------------–>
+
+
+  <a class="wa" href="https://wa.me/5516992009026?text=Olá" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+  </a>
+
+
+
+</body>
+
+</html>
