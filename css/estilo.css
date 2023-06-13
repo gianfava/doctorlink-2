@@ -33,6 +33,7 @@ h3,h2,h1{
 
 .coluna {
 	flex-direction: column;
+	
 }
 
 .line {
@@ -1082,7 +1083,7 @@ h4{
 }
 
 /* formata o botão de enviar */
-#formulario input[type="submit"] {
+.btn-submit {
   width: auto;
   padding: 10px 20px;
   background-color: #00b3b3;
