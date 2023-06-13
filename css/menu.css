@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 
 body {
+  padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
 }
 
 a {
@@ -35,14 +36,21 @@ img.logo {
 .header li a {
   display: block;
   padding: 20px 20px;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 250ms;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color: #fff;
-  background-color: #00b3b3;
+  background: rgb(255, 255, 255);
+  transform:scale(1.04);
+
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.1);
+
+
 }
 
 .alogin {
@@ -51,6 +59,7 @@ img.logo {
 }
 .alogin:hover {
   color: #fff;
+  background: #08c2c2 !important;
 }
 
 .header .logo {
@@ -66,6 +75,7 @@ img.logo {
 .header .menu {
   clear: both;
   max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
 /* icone menu*/
@@ -93,7 +103,6 @@ img.logo {
   display: block;
   height: 100%;
   position: absolute;
-
   width: 100%;
 }
 
@@ -134,7 +143,7 @@ img.logo {
 
 /* 49em = 768px */
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .header li {
     float: left;
   }
