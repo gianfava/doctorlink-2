@@ -71,13 +71,22 @@
   
         <input type="checkbox" id="termos" name="termos" required>
         <label for="termos">Eu aceito os termos de uso das informações, de acordo com a Lei n° 13.709/2018 </label><br><br>
+        <button class="btn-submit" onclick="Enviar()">Enviar</button>
+    
   
-         <button class="btn-submit" onclick="Enviar()">Enviar</button>
-      </form>
-  
-      <div id="mensagem-enviada" style="display: none;"><span class="check">&check;</span><br><br> Mensagem enviada</div>
-  
+          <div id="mensagem-enviada" style="display: none;"><span class="check">&check;</span><br><br> Mensagem enviada</div>
+        </form>
+      
+      
+//script para que quando clicar no botão enviar, apareça na tela "mensagem enviada"
 
+  <script>
+      function Enviar() {
+        document.getElementById('formulario').style.display = 'none';
+        document.getElementById('mensagem-enviada').style.display = 'block';
+        event.preventDefault();
+      }
+  </script>
   
     </div>
   </main>
