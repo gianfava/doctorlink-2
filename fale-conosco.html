@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img//favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  
 
     <title>DoctorLink | Conectando Saúde</title>
     
@@ -59,10 +59,9 @@
   <!--inicio da página fale conosco-->
   <main>
     <div class="fc-container">
-  
       <form id="formulario" action="/enviar" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" class="fale-conosco" required><br><br>
+        <input type="text" id="nome" name="nome" required><br><br>
   
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" required><br><br>
@@ -73,8 +72,7 @@
         <input type="checkbox" id="termos" name="termos" required>
         <label for="termos">Eu aceito os termos de uso das informações, de acordo com a Lei n° 13.709/2018 </label><br><br>
   
-        <buttom type="submit" class="btn" value="Enviar">Enviar</buttom>
-        <br>
+        <input type="submit" value="Enviar">
       </form>
   
       <div id="mensagem-enviada" style="display: none;"><span class="check">&check;</span><br><br> Mensagem enviada</div>
@@ -90,10 +88,8 @@
       </script>
     </div>
   </main>
-  
-<br><br>
 
-  <!–---------RODAPE ------------–>
+  <!--rodape-->
 
   <div class="footer">
     <div class="row main">
