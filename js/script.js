@@ -7,7 +7,7 @@ function Enviar() {
   document.getElementById('mensagem-enviada').style.display = 'block';
   event.preventDefault();
 }
-
+ 
 
 function AbrirEspecialidades() {
   window.open("especialidades.html");

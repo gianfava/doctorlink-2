@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img//favicon-16x16.png">
-  
+    <link rel="manifest" href="/site.webmanifest">
 
     <title>DoctorLink | Conectando Saúde</title>
     
@@ -71,23 +71,15 @@
   
         <input type="checkbox" id="termos" name="termos" required>
         <label for="termos">Eu aceito os termos de uso das informações, de acordo com a Lei n° 13.709/2018 </label><br><br>
+        
         <button class="btn-submit" onclick="Enviar()">Enviar</button>
-    
-  
-          <div id="mensagem-enviada" style="display: none;"><span class="check">&check;</span><br><br> Mensagem enviada</div>
-        </form>
-      
-      
-//script para que quando clicar no botão enviar, apareça na tela "mensagem enviada"
 
-  <script>
-      function Enviar() {
-        document.getElementById('formulario').style.display = 'none';
-        document.getElementById('mensagem-enviada').style.display = 'block';
-        event.preventDefault();
-      }
-  </script>
+
+      </form>
   
+      <div id="mensagem-enviada" style="display: none;"><span class="check">&check;</span><br><br> Mensagem enviada</div>
+  
+
     </div>
   </main>
 
@@ -108,12 +100,9 @@
             <li><a href="especialidades.html" alt=""><i class="fa fa-stethoscope"></i> Especialidades</a></li>
             <li><a href="planos.html" alt=""><i class="fas fa-laptop-medical"></i> Planos</a></li>
             <li><a href="sobre.html" alt=""><i class="fas fa-vector-square"></i> Sobre Nós</a></li>
-            
           </ul>
         </div>
       </div>
-     
-
       <div class="col">
         <div class="footer-links">
           <p><strong>Especialidades</strong></p>
@@ -126,12 +115,9 @@
             <li><a href="especialidades.html"><i class="fa fa-brain"></i> Neurologia</a></li> 
             <li><a href="especialidades.html"><i class="fa fa-spa"></i> Psicologia</a></li>
             <li><a href="especialidades.html"><i class="fa fa-baby"></i> Pediatria</a></li>
-
-          </ul>
-          
+          </ul> 
         </div>
       </div>
-
       <div class="col maps">
         <div class="place">
           <div class="map-container">
@@ -145,10 +131,7 @@
         </div>
         <a href="fale-conosco.html"><img src="./img/vector-01.jpg" alt="Fale Conosco"></a>
       </div>
-
     </div>
-
-
     <div class="row">
       <div class="social-icons">
         <ul >
@@ -159,20 +142,15 @@
         </ul>
       </div>
     </div>
-
     <div class="ending-note">
       <p>Copyright © 2023 DoctorLink. Todos os direitos reservados.</p>
     </div>
   </div>
   <!–-------FIM RODAPE ------------–>
 
-
   <a class="wa" href="https://wa.me/5516992009026?text=Olá" target="_blank">
     <i style="margin-top:16px" class="fa fa-whatsapp"></i>
   </a>
 
-
-
 </body>
-
 </html>
