@@ -39,5 +39,4 @@ Características:
  - Responsivo (mobile-friendly)
 
 Tela Exemplo Página Inicial
-
-<img src="https://i.ibb.co/nzMpFXp/screen01.png" alt="screen01" border="0">
+![enter image description here](https://i.ibb.co/nzMpFXp/screen01.png)
