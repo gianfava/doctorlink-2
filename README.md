@@ -39,4 +39,5 @@ Características:
  - Responsivo (mobile-friendly)
 
 Tela Exemplo Página Inicial
+
 ![enter image description here](https://i.ibb.co/nzMpFXp/screen01.png)
