@@ -66,10 +66,12 @@
     </div>  
     <br>
     <br>
-    <br>
-    <h3 class="capa_title" style="text-align:center ;">Especialidades em Destaque</h4>
-    <br>
-    <br>
+    <h3 class="capa_title" style="text-align:center ;">Especialidades</h4>
+      <div class="caixa">
+        <form action="/" method="get">
+          <input type="text" name="busca" placeholder="Pesquisar Especialidade Médica" style="text-align: center;">
+        </form>
+      </div>
 
     <div class="main">
       <ul class="linha">
@@ -210,9 +212,26 @@
       </ul>
     </div>
 
+    <script>
+      const input = document.querySelector("input[name='busca']");
+      const cards = document.querySelectorAll(".cards_item");
+  
+      input.addEventListener("keyup", (event) => {
+        const termoBusca = input.value.toLowerCase();
+  
+        cards.forEach((card) => {
+          const title = card.querySelector(".card_title").textContent.toLowerCase();
+  
+          if (title.includes(termoBusca)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+  
+      </script>
 
-
-    
       <br>
 
     
